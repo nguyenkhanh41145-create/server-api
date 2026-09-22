@@ -16,25 +16,25 @@ app.get('/', (req, res) => {
         name: 'Sprout Buddy',
         role: 'Baby Seedling',
         bio: 'Loves fresh morning dew and basking under the warm morning sun.',
-        image: '/friend1.png'
+        image: '/friend1.jpg'
       },
       {
         name: 'Sunny Sunflower',
         role: 'Cheery Blossom',
         bio: 'Always looks on the bright side and smiles with golden petals.',
-        image: '/friend2.png'
+        image: '/friend2.jpg'
       },
       {
         name: 'Lucky Clover',
         role: 'Charm of Joy',
         bio: 'Brings good fortune and peaceful energy to every garden visitor.',
-        image: '/friend3.png'
+        image: '/friend3.jpg'
       },
       {
         name: 'Grand Ancient Tree',
         role: 'Garden Guardian',
         bio: 'Provides cool shades where birds gather to sing all summer long.',
-        image: '/friend4.png'
+        image: '/friend4.jpg'
       }
     ]
   });
