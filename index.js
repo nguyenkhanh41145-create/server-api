@@ -1,19 +1,45 @@
 const express = require('express');
-const cors = require('cors'); // 1. Thêm dòng này để nạp thư viện cors
-const app = express();  
+const cors = require('cors');
 
-// 2. Thêm dòng này để cho phép ứng dụng ReactJS từ Vercel truy cập lấy dữ liệu
-app.use(cors()); 
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-// Sử dụng biến môi trường PORT của Render khi deploy, hoặc mặc định là 5000 ở local
-const PORT = process.env.PORT || 5000;  
+app.use(cors());
 
-// Cấu hình đường dẫn chính (Route) hiển thị chữ Hello World
-app.get('/', (req, res) => {    
-    res.send('Hello World Restful API project using Node.js + Express');
-});  
+app.get('/', (req, res) => {
+  res.json({
+    gardenName: 'Happy Little Green Garden',
+    dailyQuote: '"To plant a garden is to believe in tomorrow." 🍃',
+    serverStatus: 'Server is photosynthesizing happily! ☀️',
+    plants: [
+      {
+        name: 'Sprout Buddy',
+        role: 'Baby Seedling',
+        bio: 'Loves fresh morning dew and basking under the warm morning sun.',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Emojione_1F331.svg'
+      },
+      {
+        name: 'Sunny Sunflower',
+        role: 'Cheery Blossom',
+        bio: 'Always looks on the bright side and smiles with golden petals.',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Emojione_1F33B.svg'
+      },
+      {
+        name: 'Lucky Clover',
+        role: 'Charm of Joy',
+        bio: 'Brings good fortune and peaceful energy to every garden visitor.',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Emojione_1F33F.svg'
+      },
+      {
+        name: 'Grand Ancient Tree',
+        role: 'Garden Guardian',
+        bio: 'Provides cool shades where birds gather to sing all summer long.',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Emojione_1F333.svg'
+      }
+    ]
+  });
+});
 
-// Kích hoạt Server lắng nghe các yêu cầu gửi đến
-app.listen(PORT, () => {    
-    console.log(`Server đang chạy ổn định tại cổng: ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Garden server is running on port ${PORT}`);
 });
