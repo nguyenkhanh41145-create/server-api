@@ -16,30 +16,30 @@ app.get('/', (req, res) => {
         name: 'Sprout Buddy',
         role: 'Baby Seedling',
         bio: 'Loves fresh morning dew and basking under the warm morning sun.',
-        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f331.svg'
+        image: '/friend1.png'
       },
       {
         name: 'Sunny Sunflower',
         role: 'Cheery Blossom',
         bio: 'Always looks on the bright side and smiles with golden petals.',
-        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f33b.svg'
+        image: '/friend2.png'
       },
       {
         name: 'Lucky Clover',
         role: 'Charm of Joy',
         bio: 'Brings good fortune and peaceful energy to every garden visitor.',
-        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f340.svg'
+        image: '/friend3.png'
       },
       {
         name: 'Grand Ancient Tree',
         role: 'Garden Guardian',
         bio: 'Provides cool shades where birds gather to sing all summer long.',
-        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f333.svg'
+        image: '/friend4.png'
       }
     ]
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`Garden server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
