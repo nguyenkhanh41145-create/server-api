@@ -16,25 +16,25 @@ app.get('/', (req, res) => {
         name: 'Sprout Buddy',
         role: 'Baby Seedling',
         bio: 'Loves fresh morning dew and basking under the warm morning sun.',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Emojione_1F331.svg'
+        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f331.svg'
       },
       {
         name: 'Sunny Sunflower',
         role: 'Cheery Blossom',
         bio: 'Always looks on the bright side and smiles with golden petals.',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Emojione_1F33B.svg'
+        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f33b.svg'
       },
       {
         name: 'Lucky Clover',
         role: 'Charm of Joy',
         bio: 'Brings good fortune and peaceful energy to every garden visitor.',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Emojione_1F33F.svg'
+        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f340.svg'
       },
       {
         name: 'Grand Ancient Tree',
         role: 'Garden Guardian',
         bio: 'Provides cool shades where birds gather to sing all summer long.',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Emojione_1F333.svg'
+        image: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f333.svg'
       }
     ]
   });
